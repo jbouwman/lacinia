@@ -7,7 +7,7 @@ whereby multiple GraphQL schemas can be combined, behind a single `gateway` serv
 It's a useful concept, as it allows different teams to stand up their own schemas and services, written in
 any language, and dynamically combine them into a single "super" schema.
 
-Each service's schema can evolve independentently (as long as that evolution is backwards compatible), and can deploy
+Each service's schema can evolve independently (as long as that evolution is backwards compatible), and can deploy
 on its own cycle. The gateway becomes the primary entrypoint for all clients, and it knows how to break
 service-spanning queries apart and build an overall query plan.
 
